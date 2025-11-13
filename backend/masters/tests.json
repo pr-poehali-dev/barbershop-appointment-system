@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "name": "Get all masters",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": [
+        {
+          "id": "number",
+          "name": "string",
+          "specialization": "string",
+          "bio": "string"
+        }
+      ],
+      "bodyMatcher": "partial"
+    }
+  ]
+}
